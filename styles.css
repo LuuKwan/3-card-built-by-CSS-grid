@@ -1,0 +1,117 @@
+body{
+   background-color: hsl(0, 0%, 95%);
+   font-size: 15px;
+   text-align: center;
+}
+
+h1{
+   color: hsl(0, 0%, 95%);
+   font-family: 'Big Shoulders Display', cursive;
+   font-weight: 700;
+}
+
+button{
+   color: hsl(0, 0%, 95%);
+   width: 8rem;
+   height: 2.5rem;
+   border: solid hsl(0, 0%, 95%);
+}
+
+p{
+   color: hsla(0, 0%, 100%, 0.75);
+   font-family: 'Lexend Deca', sans-serif;
+   height: 8rem;
+   font-weight: 400;
+   line-height: 1.5;
+}
+
+img{
+   margin-top: 1.5rem;
+   height: 10%;
+}
+
+.container{
+   justify-content: center;
+   align-content: center;
+   position: relative;;
+   display: grid;
+   grid-template-columns: repeat(3,250px);
+   grid-template-rows: 22rem;
+   gap: 1px;
+   text-align: left;
+   margin-top: 10rem;
+   
+
+}
+
+/*======SEDAN CARD======= */
+.container > .sedan{
+   padding-left: 30px;
+   padding-right: 30px;
+   background-color: hsl(31, 77%, 52%);
+   border-radius: 10px;
+}
+
+.container > .sedan > button{
+   background-color: hsl(0, 0%, 95%);
+   color: hsl(31, 77%, 52%);
+   border-radius: 50px;
+   font-family: 'Lexend Deca', sans-serif;
+   /* width: 6.5rem;
+   margin-top: 2rem; */
+}
+.container > .sedan > button:hover{
+   background-color: hsl(31, 77%, 52%);
+   color: hsl(0, 0%, 95%);
+}/* ====END SEDAN CARD====== */
+
+/* ====SUV CARD START====== */
+.container > .suv{
+   padding-left: 30px;
+   padding-right: 30px;
+   background-color: hsl(184, 100%, 22%);
+   border-radius:10px;
+}
+
+.container > .suv > button{
+   background-color: hsl(0, 0%, 95%);
+   color: hsl(184, 100%, 22%);
+   border-radius: 50px;
+   font-family: 'Lexend Deca', sans-serif;
+}
+.container > .suv > button:hover{
+   background-color: hsl(184, 100%, 22%);
+   color: hsl(0, 0%, 95%);
+} /*===END SUV CARD====== */
+
+/*=====LUXURY CARD START======= */
+.container > .luxury{
+   padding-left: 30px;
+   padding-right: 30px;
+   background-color: hsl(179, 100%, 13%);
+   border-radius: 10px;
+}
+
+.container >.luxury > button{
+   background-color: hsl(0, 0%, 95%);
+   color: hsl(179, 100%, 13%);
+   border-radius: 50px;
+   font-family: 'Lexend Deca', sans-serif;
+   /* width: 6.5rem;
+   margin-bottom: 1rem;
+   margin-top: 2rem; */
+}
+.container >.luxury > button:hover{
+   background-color: hsl(179, 100%, 13%);
+   color: hsl(0, 0%, 95%);
+}/*====END LUXURY CARD====  */
+
+
+@media screen and (max-width: 1150px){
+   .container{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3,1fr);
+      margin: 0;
+   }
+}
